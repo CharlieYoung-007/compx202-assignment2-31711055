@@ -1,13 +1,12 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.geometry.Pos;
-import javafx.scene.text.Font;
+
 
 
 public class A2 extends Application {
