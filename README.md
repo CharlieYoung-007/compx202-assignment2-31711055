@@ -130,18 +130,20 @@ Task 3 Questions
 Question 1.
 What would happen if you used the key press event rather than the key release event.
 
-*Put your answer here*
+When I use the key press event, the value in price will change after I click the next textfiled and input the value.
+As a result, the last price will not appear.
 
 Question 2.
 Is the use of key release satisfactory?  Are there situations in which edits are not detected? (hint: try using the mouse)
 
-*Put your answer here*
+No, it isn't satisfactory. When I use the right mouse button, I can change the value in the box, but the price cannot change at any time. 
+Because it's not a keyboard event, it's a mouse event.
 
 Question 3.
 *Insert a screenshot of your form with 3 items and the final total calculated.
 
-
 ```
+![image](https://github.com/CharlieYoung-007/compx202-assignment2-31711055/blob/master/task3.png)
 
 Submission
 ==========
