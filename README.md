@@ -44,17 +44,49 @@ Task 1 Questions
 Question 1
 What does A2.java do when you enter text?
 
-*Put your answer here*
+When I input good characters in Raw input, such as Charlie007, 
+Charlie007 will appear at the bottom of the interface.
+There are four situations: 
+
+1.When I input the same character in Censored, such as C, 
+C will disappear in the "Charlie007"  at the bottom of the interface, 
+just show "harlie007".
+
+2.When I input a char like "A" in Replacement, the "A" will insert
+the "Chalice007" word by word —— ACAhAaAlAiAcAeA0A0A7A. 
+
+3.If I input a char that is ASCII bigger than "A" or equal "A", except the char 
+in "Charlie007", "A" will disappear, it will look back to "Charlie007".
+ 
+4.If I input a char which is from "Charlie007", like C, and I input
+"A" in Replacement, it will just replace the "C" —— "Aharlie007". So
+it means Replacement will replace the char which is inputted in Censored.
 
 Question 2
 Describe three experiments you conducted on A2.java and in each case explain what you learned from the results.
 
-*Put your answer here*
+1. I tried to change the BASELINE_LEFT to BASELINE_RIGHT, and then I found the "Raw input" and "Censored Vision" 
+appearing at the right of the box. So I know the "BASELINE_xxx" methods will define the position of the content.
+Besides I tried the top and bottom, but there are no such methods.
+
+2. I tried to make the form more readible. So I found I can choose to use ".setStyle" mehtod of HBox to design. Something
+just likes in html and css.
+
+3. I tried to understand what can HBox and VBox do. So I found Hbox is a horizontal layout, VBox is a vertical layout.
+if I want one line one input box, I need to set Hbox and getChild.add() to Hbox, so do as VBox. And I can set their various 
+attributes to better display a box.
+
 
 Question 3
 For each of the classes HBox, Text and TextField briefly describe the purpose of the class (what graphical element is it? what do you use it for?).
 
-*Put your answer here*
+Hbox: Used for horizon arrangement. I can set the distance between the control and the hbox 
+edge by setting the padding property. You can set the distance between controls by setting 
+the spacing property. You can set style to change the background color.
+
+Text: Text is used for input. It reminds me what to do in each input box.
+
+Text field: This is the input box which looks like a rectangle with a blue line around it. I can use it for user input.
 
 ```
 
@@ -74,7 +106,9 @@ Task 2 Questions
 ```
 Question 1.
 *Insert a screenshot of your form with 3 items filled in (item, number and value for each).
+
 ```
+![Screen shot of required program with no data entered](https://github.com/CharlieYoung-007/compx202-assignment2-31711055/blob/master/A2ProgramEmpty.jpeg)
 
 Task 3
 ======
