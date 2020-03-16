@@ -14,7 +14,9 @@ public class A2 extends Application {
     Text label1 = new Text(" Item");
     Text label2 = new Text("     ");
     Text label3 = new Text("#");
+    Text label4 = new Text(" ");
     Text label5 = new Text("Value");
+    Text label6 = new Text("           ");
     Text label7 = new Text("Price");
     Text label8 = new Text(" ");
     Text label9 = new Text(" ");
@@ -84,6 +86,7 @@ public class A2 extends Application {
         label9.setWrappingWidth(60);
         label10.setWrappingWidth(60);
         label12.setWrappingWidth(60);
+        label6.setWrappingWidth(276);
 
         text2.setOnKeyReleased(e -> applyCensorRules());
         text2_2.setOnKeyReleased(e -> applyCensorRules());
@@ -103,8 +106,8 @@ public class A2 extends Application {
         vbox11.getChildren().add(text1);
         vbox11.getChildren().add(text1_2);
         vbox11.getChildren().add(text1_3);
-        vbox11.getChildren().add(label11);
         vbox11.setSpacing(10);
+        vbox11.getChildren().add(label4);
         hbox1.getChildren().add(vbox11);
 
 
@@ -132,12 +135,17 @@ public class A2 extends Application {
         vbox14.getChildren().add(label8);
         vbox14.getChildren().add(label9);
         vbox14.getChildren().add(label10);
-        vbox14.getChildren().add(label12);
-        vbox14.setSpacing(18);
+        vbox14.setSpacing(20);
         hbox1.getChildren().add(vbox14);
 
 
+        HBox hbox2 = new HBox();
+        hbox2.getChildren().add(label11);
+        hbox2.getChildren().add(label6);
+        hbox2.getChildren().add(label12);
+
         root.getChildren().add(hbox1);
+        root.getChildren().add(hbox2);
 
 
         Scene scene = new Scene(root, 400, 200);
